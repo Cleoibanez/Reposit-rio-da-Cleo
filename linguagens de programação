@@ -1,0 +1,19 @@
+Aula 4
+Python: É uma linguagem simples, recomendada para iniciantes, utilizada para a ciência de dados e automação. Além disso, é mais lenta e usa mais memória.
+Java: É uma linguagem complicada, que exige mais código do que a Python. Ela é compilada para bytecode e executada na Java Virtual Machine. Idicada para aplicações corporativas.
+C++: É uma linguagem com uma alta complexidade, exigindo um cuidado ao garenciar. É compilada para código de máquina, ideal para softwares de alto desempeho, como jogos.
+Resumidamente, a Python é a mais fácil de utilizar, a Java é a intermediária, e a C++ é a mais complexa, sendo necessário um cuidado para trabalhos detalhados.
+Semelhanças: Estruturas de controle, como condicionais e loops; E tipos de dados, como numéricos, caracteres e coleções. 
+Diferenças: Sintaxe níeis de dificuldade.
+Código Pyton: print("Hello, World!")
+Código Java: public class Main {
+    public static void main(String[] args) {
+        System.out.println("Hello, World!");
+    }
+}
+Código C++: #include <iostream>
+
+int main() {
+    std::cout << "Hello, World!" << std::endl;
+    return 0;
+} 

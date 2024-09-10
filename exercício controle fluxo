@@ -1,0 +1,31 @@
+Aula 6 (tópico 1)
+Algoritmo de ordenação Bubble Sort com python: 
+def bubble_sort(arr):
+    n = len(arr)
+    # Percorrer todos os elementos do array
+    for i in range(n):
+        # A flag `swapped` ajuda a otimizar a ordenação
+        swapped = False
+        
+        # Últimos i elementos já estão no lugar correto
+        for j in range(0, n - i - 1):
+            # Comparar o elemento atual com o próximo
+            if arr[j] > arr[j + 1]:
+                # Trocar se estiver na ordem errada
+                arr[j], arr[j + 1] = arr[j + 1], arr[j]
+                # Definir `swapped` como True para indicar que houve uma troca
+                swapped = True
+        
+        # Se nenhum elemento foi trocado, o array já está ordenado
+        if not swapped:
+            break
+
+# Exemplo de uso
+arr = [64, 34, 25, 12, 22, 11, 90]
+bubble_sort(arr)
+print("Array ordenado:", arr)
+
+Aula 6 (tópico 2)
+Algorítimo imprimindo apenas as vogais de uma determinada palavra ou frase:
+Vogais encontradas: Eoeoeaeoeoa
+

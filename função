@@ -1,0 +1,92 @@
+Aula 7
+1- Função que imprima as informações de três parâmetros: nome, idade, e cidade, de maneira formatada:
+def imprimir_informacoes(nome, idade, cidade):
+    print(nome, idade, cidade, sep=" | ", end=".\n")
+
+# Exemplo de uso
+imprimir_informacoes("Cleo", 18, "Rio de Janeiro")
+
+2- Função que peça ao usuário dois números e a operação desejada:
+def calculadora():
+    # Solicitar os números ao usuário
+    num1 = float(input("Digite o primeiro número: "))
+    num2 = float(input("Digite o segundo número: "))
+    
+    # Solicitar a operação desejada
+    operacao = input("Digite a operação desejada (+, -, *, /): ")
+    
+    # Verificar a operação e realizar o cálculo
+    if operacao == '+':
+        resultado = num1 + num2
+    elif operacao == '-':
+        resultado = num1 - num2
+    elif operacao == '*':
+        resultado = num1 * num2
+    elif operacao == '/':
+        if num2 != 0:
+            resultado = num1 / num2
+        else:
+            return print("Erro: Divisão por zero não é permitida.")
+    else:
+        return print("Operação inválida.")
+    
+    # Imprimir o resultado
+    print(f"O resultado de {num1} {operacao} {num2} é: {resultado}")
+
+# Exemplo de uso
+calculadora()
+
+3- Função que peça ao usuário para digitar itens de uma lista de compras, separados por vírgula:
+def lista_de_compras():
+    # Solicitar ao usuário os itens separados por vírgula
+    itens = input("Digite os itens da lista de compras, separados por vírgula: ")
+    
+    # Dividir a string de itens em uma lista, removendo espaços extras
+    lista = [item.strip() for item in itens.split(",")]
+    
+    # Imprimir cada item em uma linha separada
+    print("\nItens da lista de compras:")
+    for item in lista:
+        print(item)
+
+# Exemplo de uso
+lista_de_compras()
+
+
+ 4- Função que solicite ao usuário a temperatura em graus Celsius, converta-a para Fahrenheit e imprima o resultado:
+ def celsius_para_fahrenheit():
+    # Solicitar a temperatura em Celsius
+    celsius = float(input("Digite a temperatura em graus Celsius: "))
+    
+    # Converter para Fahrenheit usando a fórmula
+    fahrenheit = (celsius * 9/5) + 32
+    
+    # Imprimir o resultado
+    print(f"A temperatura de {celsius}°C equivale a {fahrenheit}°F")
+
+# Exemplo de uso
+celsius_para_fahrenheit()
+
+5- Função que continue a pedir ao usuário para digitar nomes até que o nome 'sair' seja digitado:
+def coletar_nomes():
+    nomes = []
+    
+    while True:
+        nome = input("Digite um nome (ou 'sair' para terminar): ")
+        
+        if nome.lower() == 'sair':
+            break
+        
+        nomes.append(nome)
+    
+    # Imprimir todos os nomes
+    print("\nNomes digitados:")
+    for nome in nomes:
+        print(nome)
+
+# Exemplo de uso
+coletar_nomes()
+
+
+
+
